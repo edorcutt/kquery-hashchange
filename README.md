@@ -27,6 +27,17 @@ Load the jQuery plugin that provides an interface to browser hashchange events.
 			a169x567:init();
     }
 
+### setHash(<neuHash>)
+
+Set a new URL hashtag.
+
+    rule sitenav_login_complete {
+      select when explicit login_complete
+      {
+        siteNav:setHash"/myprofile");
+      }
+    }
+
 ### setActiveNav(<selector>)
 
 Since I have been spending a lot of time with [Twitter Bootstrap](http://twitter.github.com/bootstrap/) lately this action was included. This sets the active navbar.
